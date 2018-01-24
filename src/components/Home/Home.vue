@@ -1,5 +1,15 @@
 <template>
   <div class="wrapper">
+    <div class="level">
+      <div class="level-right logout-btn">
+        <router-link :to="{ name: 'Login' }">
+          <button class="button is-link logout-color">
+            Sair
+            <span class="icon is-small logout"><i class="fa fa-sign-out-alt"></i></span>
+          </button>
+        </router-link>
+      </div>
+    </div>
     <form v-on:submit.prevent="submit(pesquisa)">
       <div class="field">
         <label class="label">Procurar...</label>
@@ -539,6 +549,22 @@ export default {
     font-size: 25px;
     font-weight: 300;
     color: #ccc;
+  }
+
+  .logout-btn {
+    width: 100%;
+  }
+
+  .logout {
+    color: #fff;
+  }
+
+  .button .icon:first-child:last-child {
+    margin-left: 5px;
+  }
+
+  .logout-color {
+    background: #54baea;
   }
 }
 
