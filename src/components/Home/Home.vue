@@ -69,18 +69,6 @@
             </div>
             <nav class="level icons is-mobile">
               <div class="level-right">
-                <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
-                <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
-                <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
                 <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
@@ -89,6 +77,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -117,20 +123,6 @@
             <nav class="level icons is-mobile">
               <div class="level-right">
                 <a class="level-item">
-                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                </a>
-                <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="level-item">
@@ -138,6 +130,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -166,20 +176,6 @@
             <nav class="level icons is-mobile">
               <div class="level-right">
                 <a class="level-item">
-                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                </a>
-                <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="level-item">
@@ -187,6 +183,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -217,9 +231,6 @@
             <nav class="level icons is-mobile">
               <div class="level-right">
                 <a class="level-item">
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
-                <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="level-item">
@@ -227,6 +238,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -257,10 +286,6 @@
             <nav class="level icons is-mobile">
               <div class="level-right">
                 <a class="level-item">
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                  <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
-                <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="level-item">
@@ -268,6 +293,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -298,11 +341,6 @@
             <nav class="level icons is-mobile">
               <div class="level-right">
                 <a class="level-item">
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-small color-star"><i class="fas fa-star"></i></span>
-                </a>
-                <a class="level-item">
                   <span class="icon is-small"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="level-item">
@@ -310,6 +348,24 @@
                 </a>
               </div>
             </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
           </div>
         </article>
       </div>
@@ -684,6 +740,10 @@ export default {
 
   .level.icons {
     float: right;
+
+    &.star {
+      font-size: 20px;
+    }
   }
 
   .select, 
