@@ -63,8 +63,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -116,8 +116,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -169,8 +169,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -224,8 +224,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -279,8 +279,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -334,8 +334,8 @@
                 <br>
                 {{pessoa.tipoSeguro}}
                 <br>
-                <div class="hide-infos">Email: <small>emaxxx@xxx.com</small></div>
-                <div class="hide-infos">Telefone: <small>(51)9xxxx-5005</small></div>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
               </div>
             </div>
             <nav class="level icons is-mobile">
@@ -406,35 +406,120 @@ export default {
           id: 1,
           nome: 'Rodrigo Reis',
           tipoSeguro: 'Automóvel',
-          cidade: 'São Paulo - SP',
+          cidade: 'São Paulo',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 100
         },
         {
           id: 2,
           nome: 'Eliana Pessoa',
           tipoSeguro: 'Automóvel',
-          cidade: 'Matutina - MG',
+          cidade: 'Matutina',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 3,
           nome: 'Fernando',
           tipoSeguro: 'Automóvel',
-          cidade: 'Brasília - DF',
+          cidade: 'Brasília',
+          regiao: 'Centro-Oeste',
+          estado: 'DF',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
+        {
+          id: 4,
+          nome: 'Luiz Mathias',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
+          score: 90
+        },
+        {
+          id: 4,
+          nome: 'Dani Bah',
+          tipoSeguro: 'Automóvel',
+          cidade: 'Florianópolis',
+          regiao: 'Sul', 
+          estado: 'SC',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
+          score: 90
+        }, 
+        {
+          id: 4,
+          nome: '‎Helô Vicenti‎',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
+          score: 90
+        }, 
         {
           id: 4,
           nome: 'Rafael Pio',
           tipoSeguro: 'Automóvel',
           cidade: '',
+          regiao: '',
+          estado: '',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
+          score: 80
+        },
+        {
+          id: 4,
+          nome: 'Vinicius Panisson',
+          tipoSeguro: 'Automóvel',
+          cidade: '',
+          estado: 'Rio Grande do Sul',
+          regiao: 'Sul',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99 ',
+          score: 80
+        },
+        {
+          id: 4,
+          nome: '‎Janaina Zuculo Volponi‎ ',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 93463 3699 ',
+          telefoneHide: '(19) 93463xx xx99 ',
           score: 80
         },
         {
           id: 5,
           nome: 'Gilson Lima',
           tipoSeguro: 'Automóvel',
-          cidade: 'Feira de Santana - Bahia',
+          cidade: 'Feira de Santana',
+          estado: 'BA',
+          regiao: 'Nordeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99 ',
           score: 80
         },
         {
@@ -442,41 +527,133 @@ export default {
           nome: 'Adriano Lourenço',
           tipoSeguro: 'Automóvel',
           cidade: '',
+          estado: '',
+          regiao: '',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99 ',
           score: 80
-        },          
+        }, 
+        {
+          id: 7,
+          nome: 'Newton Mendes Mesquita‎',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99 ',
+          score: 80
+        },
+        {
+          id: 9,
+          nome: 'Sergio Edu',
+          tipoSeguro: 'Automóvel',
+          cidade: 'Rio de Janeiro',
+          estado: 'RJ',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99 ',
+          score: 80
+        },
+        {
+          id: 9,
+          nome: 'Cassiana Fagoti',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'caxxxxxxxi@xmail.com',
+          telefone: '(19) 370xxx xx65',
+          telefoneHide: '(19) 370xxx xx65',
+          score: 80
+        },
+        {
+          id: 9,
+          nome: 'Ismael Siqueira',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99',
+          score: 80
+        }, 
+        {
+          id: 9,
+          nome: 'Sylvia Iwasaki',
+          tipoSeguro: 'Automóvel',
+          cidade: 'São Paulo',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99',
+          score: 80
+        }, 
         {
           id: 7,
           nome: 'Alisson de Oliveira Santos',
           tipoSeguro: 'Automóvel',
-          cidade: 'Curitiba - PR',
-          score: 20
+          cidade: 'Curitiba',
+          estado: 'Paraná',
+          regiao: 'Sul',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99',
+          score: 20,
         },
         {
           id: 8,
           nome: 'Wesley Gonçalves',
           tipoSeguro: 'Automóvel',
-          cidade: 'Catalão - GO',
-          score: 20
+          cidade: 'Catalão',
+          estado: 'Goiás',
+          regiao: 'Centro-Oeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99',
+          score: 20,
+          
         },
         {
           id: 9,
           nome: 'Leandro Paiva dos Santos',
           tipoSeguro: 'Automóvel',
-          cidade: 'São Paulo - SP',
+          cidade: 'Catalão',
+          estado: 'SP',
+          regiao: 'Sudeste',
+          email: 'emaxxx@xxx.com',
+          telefone: '(19) 934xx xx99',
+          telefoneHide: '(19) 934xx xx99',
           score: 20
+          
         },
         {
           id: 10,
           nome: 'Robson Pires',
           tipoSeguro: 'Automóvel',
-          cidade: 'Osasco - SP',
+          cidade: 'Osasco',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 20
         },
         {
           id: 11,
           nome: 'Gilson Lima',
           tipoSeguro: 'Automóvel',
-          cidade: 'Feira de Santana - Bahia',
+          cidade: 'Feira de Santana',
+          regiao: 'Nordeste',
+          estado: 'BA',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 20
         }
       ],
@@ -485,21 +662,36 @@ export default {
           id: 1,
           nome: 'Cícero Ávila',
           tipoSeguro: 'Residencial',
-          cidade: 'Fortaleza - CE',
+          cidade: 'Fortaleza',
+          regiao: 'Nordeste',
+          estado: 'CE',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 100
         },
         {
           id: 2,
           nome: 'Wander Paiva',
           tipoSeguro: 'Residencial',
-          cidade: 'Coronel Fabriciano - MG',
+          cidade: 'Coronel Fabriciano',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 100
         },
         {
           id: 3,
           nome: 'Mariana Werner',
           tipoSeguro: 'Residencial',
-          cidade: 'Florianópolis - SC',
+          cidade: 'Florianópolis',
+          regiao: 'Sul',
+          estado: 'SC',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
@@ -507,27 +699,47 @@ export default {
           nome: 'Uildesmar Italo',
           tipoSeguro: 'Residencial',
           cidade: 'Santos Dumont - MG',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 5,
           nome: 'Rafael Barros',
           tipoSeguro: 'Residencial',
-          cidade: 'Londrina - PR',
+          cidade: 'Londrina',
+          regiao: 'Sul',
+          estado: 'PR',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 6,
           nome: 'Joana D`arc',
           tipoSeguro: 'Residencial',
-          cidade: 'Rio de Janeiro - RJ',
+          cidade: 'Rio de Janeiro',
+          regiao: 'Sudeste',
+          estado: 'RJ',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 7,
           nome: 'Kelen Grüdtner',
           tipoSeguro: 'Residencial',
-          cidade: 'Florianópolis - SC',
+          cidade: 'Florianópolis',
+          regiao: 'Sul',
+          estado: 'SC',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         }
       ],
@@ -536,28 +748,48 @@ export default {
           id: 8,
           nome: 'Andreza Andrade',
           tipoSeguro: 'Viagem',
-          cidade: 'Brasília - DF',
+          cidade: 'Brasília',
+          regiao: 'Centro-Oeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 100
         },
         {
           id: 9,
           nome: 'Felipe Mendes',
           tipoSeguro: 'Viagem',
-          cidade: 'Belo Horizonte - MG',
+          cidade: 'Belo Horizonte',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 100
         },
         {
           id: 10,
           nome: 'Valter Rodrigues',
           tipoSeguro: 'Viagem',
-          cidade: 'São Paulo - SP',
+          cidade: 'São Paulo',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 11,
           nome: 'Fernando Lima',
           tipoSeguro: 'Viagem',
-          cidade: 'Rio de Janeiro - RJ',
+          cidade: 'Rio de Janeiro',
+          regiao: 'Sudeste',
+          estado: 'RJ',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
@@ -565,20 +797,35 @@ export default {
           nome: 'Larissa Abreu',
           tipoSeguro: 'Viagem',
           cidade: 'Belo Horizonte - MG',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 13,
           nome: 'Uildesmar Italo',
           tipoSeguro: 'Viagem',
-          cidade: 'Santos Dumont - MG',
+          cidade: 'Santos Dumont',
+          regiao: 'Centro-Oeste',
+          estado: 'MG',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
           id: 14,
           nome: 'Felipe Arruda',
           tipoSeguro: 'Viagem',
-          cidade: 'Guarulhos - SP',
+          cidade: 'Guarulhos',
+          regiao: 'Sudeste',
+          estado: 'SP',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 90
         },
         {
@@ -586,6 +833,11 @@ export default {
           nome: 'Fabrício Conchon',
           tipoSeguro: 'Viagem',
           cidade: '',
+          regiao: '',
+          estado: '',
+          email: 'emaxxx@xxx.com',
+          telefone: '(51)9xxxx-5005',
+          telefoneHide: '(51)9xxxx-5005',
           score: 80
         }
       ]
