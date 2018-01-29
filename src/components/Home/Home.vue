@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <div class="wrapper">
     <div class="level">
       <div class="level-right logout-btn">
@@ -22,6 +23,10 @@
               <option value="score0_50">Score 0 - 50</option>
               <option value="score51_80">Score 50 - 80</option>
               <option value="score81_100">Score 80 - 100</option>
+              <option value="Sul">Sul</option>
+              <option value="Sudeste">Sudeste</option>
+              <option value="Centro-Oeste">Centro-Oeste</option>
+              <option value="Nordeste">Nordeste</option>
             </select>
           </div>
         </div>
@@ -209,7 +214,7 @@
     <!--  -->
 
     <div class="level boxes" v-if="firstScore">
-      <div class="level-item box" v-for="pessoa in score0_50" :key="pessoa.id">
+      <div class="level-item box" v-for="pessoa in score0_50">
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
@@ -242,15 +247,6 @@
               <nav class="level icons star is-mobile">
                 <div class="level-right">
                   <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
                     <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
                   </a>
                 </div>
@@ -264,7 +260,7 @@
     <!--  -->
 
     <div class="level boxes" v-if="secondScore">
-      <div class="level-item box" v-for="pessoa in score51_80" :key="pessoa.id">
+      <div class="level-item box" v-for="pessoa in score51_80">
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
@@ -296,15 +292,7 @@
             <div class="level">
               <nav class="level icons star is-mobile">
                 <div class="level-right">
-                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                  </a>
                   <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
-                  </a>
-                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
-                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
                     <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
                     <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
                   </a>
@@ -319,7 +307,220 @@
     <!--  -->
 
     <div class="level boxes" v-if="thirdScore">
-      <div class="level-item box" v-for="pessoa in score81_100" :key="pessoa.id">
+      <div class="level-item box" v-for="pessoa in score81_100">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+
+          <div class="media-content">
+            <div class="content">
+              <div>
+                <strong>{{pessoa.nome}}</strong> <small>{{pessoa.cidade}}</small>
+                <br>
+                {{pessoa.tipoSeguro}}
+                <br>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
+              </div>
+            </div>
+            <nav class="level icons is-mobile">
+              <div class="level-right">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-download"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                </a>
+              </div>
+            </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="level boxes" v-if="pesqSul">
+      <div class="level-item box" v-for="pessoa in sul">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+
+          <div class="media-content">
+            <div class="content">
+              <div>
+                <strong>{{pessoa.nome}}</strong> <small>{{pessoa.cidade}}</small>
+                <br>
+                {{pessoa.tipoSeguro}}
+                <br>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
+              </div>
+            </div>
+            <nav class="level icons is-mobile">
+              <div class="level-right">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-download"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                </a>
+              </div>
+            </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="level boxes" v-if="pesqSudeste">
+      <div class="level-item box" v-for="pessoa in sudeste">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+
+          <div class="media-content">
+            <div class="content">
+              <div>
+                <strong>{{pessoa.nome}}</strong> <small>{{pessoa.cidade}}</small>
+                <br>
+                {{pessoa.tipoSeguro}}
+                <br>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
+              </div>
+            </div>
+            <nav class="level icons is-mobile">
+              <div class="level-right">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-download"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                </a>
+              </div>
+            </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="level boxes" v-if="pesqNordeste">
+      <div class="level-item box" v-for="pessoa in nordeste">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+
+          <div class="media-content">
+            <div class="content">
+              <div>
+                <strong>{{pessoa.nome}}</strong> <small>{{pessoa.cidade}}</small>
+                <br>
+                {{pessoa.tipoSeguro}}
+                <br>
+                <div class="hide-infos">Email: <small>{{pessoa.email}}</small></div>
+                <div class="hide-infos">Telefone: <small>{{pessoa.telefone}}</small></div>
+              </div>
+            </div>
+            <nav class="level icons is-mobile">
+              <div class="level-right">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-download"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                </a>
+              </div>
+            </nav>
+            <div class="level">
+              <nav class="level icons star is-mobile">
+                <div class="level-right">
+                  <a class="level-item" v-if="pessoa.score >= 0 && pessoa.score <= 50">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 50  && pessoa.score <= 80">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                  <a class="level-item" v-if="pessoa.score > 80  && pessoa.score <= 100">
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                    <span class="icon is-big color-star"><i class="fas fa-star"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="level boxes" v-if="pesqCentro_Oeste">
+      <div class="level-item box" v-for="pessoa in centro_oeste">
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
@@ -401,6 +602,14 @@ export default {
       score0_50: [],
       score51_80: [],
       score81_100: [],
+      pesqSul: false,
+      pesqSudeste: false,
+      pesqNordeste: false,
+      pesqCentro_Oeste: false,
+      sul: [],
+      sudeste: [],
+      nordeste: [],
+      centro_oeste: [],
       seguro_auto: [
         {
           id: 1,
@@ -698,7 +907,7 @@ export default {
           id: 4,
           nome: 'Uildesmar Italo',
           tipoSeguro: 'Residencial',
-          cidade: 'Santos Dumont - MG',
+          cidade: 'Santos Dumont',
           regiao: 'Centro-Oeste',
           estado: 'MG',
           email: 'emaxxx@xxx.com',
@@ -796,7 +1005,7 @@ export default {
           id: 12,
           nome: 'Larissa Abreu',
           tipoSeguro: 'Viagem',
-          cidade: 'Belo Horizonte - MG',
+          cidade: 'Belo Horizonte',
           regiao: 'Centro-Oeste',
           estado: 'MG',
           email: 'emaxxx@xxx.com',
@@ -845,87 +1054,92 @@ export default {
   },
 
   methods: {
-    submit (pesquisa) {
+
+    calculateScore(min, max) {
+      let scoreResult = []
+      
+      scoreResult = scoreResult.concat(this.seguro_auto, this.seguro_residencia, this.seguro_viagem)
+
+      return scoreResult.filter((pessoa) => {
+        return pessoa.score > min && pessoa.score <= max
+      })
+    },
+
+    calculateRegion(reg) {
+      let regioes = []
+      
+      regioes = regioes.concat(this.seguro_auto, this.seguro_residencia, this.seguro_viagem)
+
+      return regioes.filter((pessoa) => {
+        return pessoa.regiao == reg
+      })
+    },
+
+    clear() {
       this.isValid = false
+      this.auto = false
+      this.residencia = false
+      this.viagem = false
+      this.pesqSul = false
+      this.pesqSudeste = false
+      this.pesqNordeste = false
+      this.pesqCentro_Oeste = false
+      this.firstScore = false
+      this.secondScore = false
+      this.thirdScore = false
+
+      this.score0_50 = []
+      this.score51_80 = []
+      this.score81_100 = []
+
+      this.sul = []
+      this.sudeste = []
+      this.centro_oeste = []
+      this.nordeste = []
+    },
+
+    submit (pesquisa) {
+      this.clear()
+
       if (pesquisa == 'auto') {
         this.auto = true
-        this.residencia = false
-        this.viagem = false
-        this.firstScore = false
-        this.sencondScore = false
-        this.thirdScore = false
+
       } else if (pesquisa == 'residencia') {
         this.residencia = true
-        this.auto = false
-        this.viagem = false
-        this.firstScore = false
-        this.sencondScore = false
-        this.thirdScore = false
+
       } else if (pesquisa == 'viagem') {
         this.viagem = true
-        this.auto = false
-        this.residencia = false
-        this.firstScore = false
-        this.sencondScore = false
-        this.thirdScore = false
+        
       } else if (pesquisa == "score0_50") {
         this.firstScore = true
-        this.viagem = false
-        this.auto = false
-        this.residencia = false
-        this.sencondScore = false
-        this.thirdScore = false
-
-        let array1 = this.seguro_auto.filter((pessoa) => {
-          return pessoa.score > 0 && pessoa.score <= 50 
-        })
-        let array2 = this.seguro_residencia.filter((pessoa) => {
-          return pessoa.score > 0 && pessoa.score <= 50 
-        })
-        let array3 = this.seguro_viagem.filter((pessoa) => {
-          return pessoa.score > 0 && pessoa.score <= 50 
-        })
         
-        this.score0_50 = this.score0_50.concat(array1, array2, array3)
+        this.score0_50 = this.calculateScore(0, 50)
+        
       } else if (pesquisa == "score51_80") {
-        this.firstScore = false
-        this.viagem = false
-        this.auto = false
-        this.residencia = false
-        this.thirdScore = false
         this.secondScore = true
-
-        let array1 = this.seguro_auto.filter((pessoa) => {
-          return pessoa.score >= 51 && pessoa.score <= 80 
-        })
-        let array2 = this.seguro_residencia.filter((pessoa) => {
-          return pessoa.score >= 51 && pessoa.score <= 80 
-        })
-        let array3 = this.seguro_viagem.filter((pessoa) => {
-          return pessoa.score >= 51 && pessoa.score <= 80 
-        })
         
-        this.score51_80 = this.score51_80.concat(array1, array2, array3)
+        this.score51_80 = this.calculateScore(51, 80)
 
       } else if (pesquisa == "score81_100") {
         this.thirdScore = true
-        this.firstScore = false
-        this.viagem = false
-        this.auto = false
-        this.residencia = false
-        this.secondScore = false
 
-        let array1 = this.seguro_auto.filter((pessoa) => {
-          return pessoa.score >= 81 && pessoa.score <= 100 
-        })
-        let array2 = this.seguro_residencia.filter((pessoa) => {
-          return pessoa.score >= 81 && pessoa.score <= 100 
-        })
-        let array3 = this.seguro_viagem.filter((pessoa) => {
-          return pessoa.score >= 81 && pessoa.score <= 100 
-        })
-        
-        this.score81_100 = this.score81_100.concat(array1, array2, array3)
+        this.score81_100 = this.calculateScore(81, 100)
+      } else if (pesquisa == "Sul") {
+        this.pesqSul = true
+
+        this.sul = this.calculateRegion("Sul")
+      } else if (pesquisa == "Sudeste") {
+        this.pesqSudeste = true
+
+        this.sudeste = this.calculateRegion("Sudeste")
+      } else if (pesquisa == "Nordeste") {
+        this.pesqNordeste = true
+
+        this.nordeste = this.calculateRegion("Nordeste")
+      } else if (pesquisa == "Centro-Oeste") {
+        this.pesqCentro_Oeste = true
+
+        this.centro_oeste = this.calculateRegion("Centro-Oeste")
       }
     }
   }
